@@ -1,5 +1,8 @@
 
+const northAmericaDomain = '/default-domain/workspaces/North America';
+
 module.exports = {
-    contractToFetch: '/default-domain/workspaces/North America/awesome-tech/skynet-ai-maintenance',
-    contractToDelete: '/default-domain/workspaces/North America/Caterer/2015 Annual Conference'
+    northAmericaDomain,
+    contractToFetch: `${northAmericaDomain}/awesome-tech/skynet-ai-maintenance`,
+    contractToDelete: `${northAmericaDomain}/Caterer/2015 Annual Conference`,
 };

@@ -1,6 +1,6 @@
 const Nuxeo = require('nuxeo');
 
-const nuxeo = new Nuxeo({
+const nuxeoAdmin = new Nuxeo({
     auth: {
         method: 'basic',
         username: 'Administrator',
@@ -8,4 +8,24 @@ const nuxeo = new Nuxeo({
     }
 });
 
-module.exports = nuxeo;
+const nuxeoSales = new Nuxeo({
+    auth: {
+        method: 'basic',
+        username: 'afraser',
+        password: 'afraser'
+    }
+});
+
+const nuxeoSalesManager = new Nuxeo({
+    auth: {
+        method: 'basic',
+        username: 'sconnor',
+        password: 'sconnor'
+    }
+});
+
+module.exports = {
+    nuxeoAdmin,
+    nuxeoSales,
+    nuxeoSalesManager
+};

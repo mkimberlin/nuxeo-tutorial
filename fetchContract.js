@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const nuxeo = require('./nuxeoConnection');
+const nuxeo = require('./nuxeoConnection').nuxeoAdmin;
 
 nuxeo.schemas('*');
 nuxeo.repository().header('depth', 'max')

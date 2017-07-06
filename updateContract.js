@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const nuxeo = require('./nuxeoConnection');
+const nuxeo = require('./nuxeoConnection').nuxeoAdmin;
 let contractToFetch = require('./tutorialConstants').contractToFetch;
 
 nuxeo.schemas('*');
