@@ -1,2 +1,4 @@
 .idea/
 node_modules/
+tmp/*.pdf
+tmp/*.jpeg
